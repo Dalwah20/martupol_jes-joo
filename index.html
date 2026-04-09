@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martupol Maharjono & Jesica</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PARTICLE GOLD -->
+<div class="particles"></div>
+
+<!-- OPENING -->
+<div class="opening" id="opening">
+    <div class="opening-content">
+        <h2>Undangan Martupol</h2>
+        <h1 class="glow">Maharjono & Jesica</h1>
+        <button onclick="openInvitation()">Buka Undangan</button>
+    </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+<source src="Bobby Purba & Tabita Sipahutar - Sasada Ho (Lagu Batak Terbaru 2024) Official Music Video.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">♫</button>
+
+<!-- HERO -->
+<section class="hero reveal">
+    <div class="hero-content">
+        <h3>Undangan Martupol</h3>
+        <h1 class="glow">Maharjono Naibaho, S.H.</h1>
+        <span>&</span>
+        <h1 class="glow">Jesica Maldini Pakpahan, S.Pd</h1>
+        <p>23 Mei 2026 | HKBP Cikampek | 13:00WIB</p>
+        <div id="countdown"></div>
+    </div>
+</section>
+
+<div class="ornament"></div>
+
+<!-- GALERI -->
+<section class="gallery reveal">
+<h2>Galeri Maharjono & Jesica</h2>
+<div class="slider">
+<img src="img/foto1.jpeg" class="slide active">
+<img src="img/WhatsApp Image 2026-02-06 at 12.00.31.jpeg" class="slide">
+<img src="img/WhatsApp Image 2026-02-06 at 12.00.32 (1).jpeg" class="slide">
+<img src="img/WhatsApp Image 2026-02-06 at 12.00.32.jpeg" class="slide">
+</div>
+</section>
+
+<!-- MAP -->
+<section class="map reveal">
+<h2>Lokasi Acara</h2>
+<iframe 
+src="https://maps.google.com/maps?q=HKBP%20Cikampek&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp reveal">
+<h2>Konfirmasi Kehadiran</h2>
+<a href="https://wa.me/6287889643602?text=Saya%20akan%20hadir%20di%20Martupol" target="_blank">
+<button>Kirim RSVP via WhatsApp</button>
+</a>
+
+<!-- REKENING -->
+<section class="rekening reveal">
+
+<div class="rekening-box">
+<p id="rek1">1560051855</p>
+<span>a/n Maharjono Naibaho (BCA)</span>
+<button onclick="copyRek('rek1')">Copy</button>
+</div>
+
+<div class="rekening-box">
+<p id="rek2">3780337124</p>
+<span>a/n Jesica Maldini Pakpahan (BCA)</span>
+<button onclick="copyRek('rek2')">Copy</button>
+</div>
+
+<footer>
+<p>Kehadiran Anda akan menjadi kebahagiaan dan kehormatan bagi kami, untuk berbagi momen indah di hari istimewa ini.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
